@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.eftimoff.androipathview.PathView;
 import com.hndsolution.battery.MainActivity;
 import com.hndsolution.battery.R;
+import com.hndsolution.battery.ui.login.ChooserActivity;
+import com.hndsolution.battery.ui.login.EmailPasswordActivity;
 import com.hndsolution.battery.ui.login.LoginActivity;
 
 import static com.hndsolution.battery.utils.Constants.USER_TOKEN;
@@ -38,7 +40,10 @@ public class SplashActivity extends AppCompatActivity {
         if (mSharedPreferences.getString(USER_TOKEN, null) != null) {
             i = MainActivity.getStartIntent(SplashActivity.this);
         } else {
-            i = LoginActivity.getStartIntent(SplashActivity.this);
+            //i = MainActivity.getStartIntent(SplashActivity.this);
+           //i = LoginActivity.getStartIntent(SplashActivity.this);
+            // i = EmailPasswordActivity.getStartIntent(SplashActivity.this);
+            i = ChooserActivity.getStartIntent(SplashActivity.this);
         }
 
         // TODO :: check for the user_token here & redirect to corresponding class

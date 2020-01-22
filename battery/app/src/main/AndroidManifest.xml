@@ -45,6 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.login.EmailPasswordActivity"
+            android:label="이메일로그인"></activity>
+        <activity
+            android:name=".ui.login.ChooserActivity"
+            android:label="로그인선택"></activity>
     </application>
 
 </manifest>

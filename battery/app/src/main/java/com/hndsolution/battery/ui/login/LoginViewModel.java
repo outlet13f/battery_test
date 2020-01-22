@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.hndsolution.battery.data.LoginRepository;
 import com.hndsolution.battery.data.Result;
 import com.hndsolution.battery.data.model.LoggedInUser;
@@ -16,6 +17,8 @@ public class LoginViewModel extends ViewModel {
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
     private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
     private LoginRepository loginRepository;
+
+    private FirebaseAuth mAuth;
 
     LoginViewModel(LoginRepository loginRepository) {
         this.loginRepository = loginRepository;
