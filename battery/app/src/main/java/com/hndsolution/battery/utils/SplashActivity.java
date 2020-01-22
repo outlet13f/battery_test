@@ -13,8 +13,6 @@ import com.eftimoff.androipathview.PathView;
 import com.hndsolution.battery.MainActivity;
 import com.hndsolution.battery.R;
 import com.hndsolution.battery.ui.login.ChooserActivity;
-import com.hndsolution.battery.ui.login.EmailPasswordActivity;
-import com.hndsolution.battery.ui.login.LoginActivity;
 
 import static com.hndsolution.battery.utils.Constants.USER_TOKEN;
 
